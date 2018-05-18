@@ -1,0 +1,39 @@
+@import './vuetify.rtl.scss';
+
+.toasted-container, .toasted-container.full-width{
+  font-family: 'Vazir';
+}
+
+.content--wrap {
+  padding-bottom: 90px;
+}
+
+.application.theme--light { 
+  background-color: rgb(238,238,238);
+}
+
+.list-enter-active, .list-leave-active {
+  transition: all 0.1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.bounce-enter-active {
+  animation: bounce-in .3s;
+}
+.bounce-leave-active {
+  animation: bounce-in .1s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

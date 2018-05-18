@@ -1,0 +1,38 @@
+{
+  "name": "mashinman",
+  "version": "1.0.0",
+  "description": "Automotive Diagnostics Tool",
+  "author": "meyt <contact@meyti.ir>",
+  "private": true,
+  "scripts": {
+    "build-db": "node ./plugins/expert-system/build.js",
+    "dev": "nuxt",
+    "build": "node ./plugins/expert-system/build.js && nuxt build",
+    "build-local": "BUILD_STATE=local nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "js-yaml": "^3.11.0",
+    "loadash": "^1.0.0",
+    "node-sass": "^4.9.0",
+    "nuxt": "^1.0.0",
+    "sass-loader": "^7.0.1",
+    "vuetify": "^1.0.0",
+    "vuetify-toast": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
+}

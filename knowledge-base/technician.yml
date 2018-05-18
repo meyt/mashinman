@@ -1,0 +1,6 @@
+به نظرتان مشکل مربوط به کدام بخش خودرو میشود؟:
+  سیستم فنربندی و تعلیق: ~/car-sections/suspension
+  سیم کشی، مدارات و الکترونیک: ~/car-sections/electronic
+  موتور: ~/car-sections/engine
+  بدنه: ~/car-sections/body
+  فرمان و کنترل: ~/car-sections/control
