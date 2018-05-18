@@ -1,5 +1,7 @@
 # mashinman
 
+[![Build Status](https://travis-ci.org/meyt/mashinman.svg?branch=master)](https://travis-ci.org/meyt/mashinman)
+
 > Automotive Diagnostics Tool
 
 ## Build Setup
@@ -11,7 +13,7 @@ $ npm install # Or yarn install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# build for production as SPA to serve on gh-pages `/mashinman`
 $ npm run build
 
 # build for production and serve from filesystem
