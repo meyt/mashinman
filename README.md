@@ -13,10 +13,12 @@ $ npm run dev
 
 # build for production and launch server
 $ npm run build
-$ npm start
 
-# generate static project
-$ npm run generate
+# build for production and serve from filesystem
+$ npm run build-local
+
+# build knowledgebase 
+$ npm run build-kb
 ```
 
 For detailed explanation on how things work, check out the [Nuxt.js](https://github.com/nuxt/nuxt.js) and [Vuetify.js](https://vuetifyjs.com/) documentation.

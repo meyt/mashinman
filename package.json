@@ -5,7 +5,7 @@
   "author": "meyt <contact@meyti.ir>",
   "private": true,
   "scripts": {
-    "build-db": "node ./plugins/expert-system/build.js",
+    "build-kb": "node ./plugins/expert-system/build.js",
     "dev": "nuxt",
     "build": "node ./plugins/expert-system/build.js && nuxt build",
     "build-local": "BUILD_STATE=local nuxt build",
