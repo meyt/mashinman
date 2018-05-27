@@ -4,7 +4,7 @@
       <v-card class="mt-5">
         <template v-if="conclusion">
           <v-card-text>
-            <p><v-icon>assignment</v-icon>&nbsp; نتیجه: {{ conclusion }}.</p>
+            <p><v-icon>assignment</v-icon>&nbsp; نتیجه: <span v-html="conclusion.replace('\n', '<br>')"></span>.</p>
           </v-card-text>
         </template>
 
