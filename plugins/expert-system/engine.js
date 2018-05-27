@@ -20,18 +20,17 @@ export default function ExpertSystemEngine () {
        *
        * @param {string} item Selected answer
        */
-      if (this.conclusion === null) {
-        const answerValue = this.currentResource[this.currentQuestion][item]
-        const nextResource = this.resolveNextResource(answerValue)
-        if (nextResource) {
-          this.breadcrumb.push(this.currentQuestion)
-          this.breadcrumb.push(item)
-          this.currentResource = this.resolveNextResource(answerValue)
-          this.applyCurrentResource()
-        } else {
-          this.conclusion = answerValue
-          this.breadcrumb.push(answerValue)
-        }
+      if (this.conclusion !== null) return
+      const answerValue = this.currentResource[this.currentQuestion][item]
+      const nextResource = this.resolveNextResource(answerValue)
+      if (nextResource) {
+        this.breadcrumb.push(this.currentQuestion)
+        this.breadcrumb.push(item)
+        this.currentResource = this.resolveNextResource(answerValue)
+        this.applyCurrentResource()
+      } else {
+        this.conclusion = answerValue
+        this.breadcrumb.push(answerValue)
       }
     },
     resolveNextResource (answerValue) {
