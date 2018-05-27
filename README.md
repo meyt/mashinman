@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/meyt/mashinman.svg?branch=master)](https://travis-ci.org/meyt/mashinman)
 
-> Automotive Diagnostics Tool
+> Automotive Diagnostics Tool [[Demo](https://meyt.github.io/mashinman/)]
 
 ## Build Setup
 
